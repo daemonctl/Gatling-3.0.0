@@ -17,7 +17,11 @@ class AppTest extends Simulation {
       .get("/computers"))
 
   setUp(
-    scn.inject(atOnceUsers(1))
+    scn.inject(incrementUsersPerSec(20)
+      .times(5)
+      .eachLevelLasting(10)
+      .separatedByRampsLasting(20)
+      .startingFrom(20))
   ).protocols(httpConf)
 }
 
