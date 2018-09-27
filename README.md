@@ -15,7 +15,7 @@ Gatling is a highly capable load testing tool. It is designed for ease of use, m
 - [x] Project link: https://github.com/khergner/Gatling-3.0.0.git
 - [x] Gatling dependencies: https://mvnrepository.com/artifact/io.gatling
 - [x] Create executable project: mvn clean compile -Dlogback.configurationFile=logback.xml -f pom.xml
-- [x] Script file run project: ./locally.sh
+- [x] Script file run project: <b>cd GatlingNewRelease</b> after run shell script <b>./locally.sh</b>
 
 <b><u>Migrating from 2.3 to 3.0</u></b>
 * baseURL was renamed into baseUrl
