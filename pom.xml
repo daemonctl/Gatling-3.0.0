@@ -23,7 +23,7 @@
             <groupId>io.gatling.highcharts</groupId>
             <artifactId>gatling-charts-highcharts</artifactId>
             <version>${gatling.version}</version>
-            <scope>compile</scope>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
@@ -39,7 +39,7 @@
                     <execution>
                         <phase>compile</phase>
                         <goals>
-                            <goal>execute</goal>
+                            <goal>test</goal>
                         </goals>
                     </execution>
                 </executions>
